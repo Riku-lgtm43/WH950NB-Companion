@@ -1,0 +1,34 @@
+# Generated Android build output
+/build/
+*.apk
+*.aab
+*.apks
+*.dex
+*.class
+
+# Private signing material; never publish keys or signing passwords
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+*.env
+.env
+.env.*
+
+# Local logs, editor/temp files, old source backups
+*.log
+*.tmp
+*.bak
+*.orig
+*.before_*
+*.java.before*
+*.java.v0_*
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# Shizuku API binaries are fetched during build
+/libs/shizuku/*.jar
+/libs/shizuku/*.aar

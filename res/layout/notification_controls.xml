@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="10dp"
+    android:background="@drawable/notif_panel_bg">
+    <TextView android:id="@+id/notif_status"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="12sp" android:textColor="#E7E7EC"
+        android:paddingBottom="10dp" android:maxLines="2" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/notif_anc" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="72dp"
+            android:gravity="center" android:orientation="vertical"
+            android:background="@drawable/notif_action_bg" android:clickable="true"
+            android:contentDescription="ANC">
+            <ImageView android:layout_width="23dp" android:layout_height="23dp"
+                android:src="@drawable/ic_anc" android:tint="#F0F0F4"
+                android:contentDescription="ANC icon" />
+            <TextView android:id="@+id/notif_anc_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ANC" android:textSize="12sp" android:textColor="#F0F0F4"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+        <Space android:layout_width="7dp" android:layout_height="1dp" />
+        <LinearLayout android:id="@+id/notif_ambient" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="72dp"
+            android:gravity="center" android:orientation="vertical"
+            android:background="@drawable/notif_action_bg" android:clickable="true"
+            android:contentDescription="Ambient sound">
+            <ImageView android:layout_width="23dp" android:layout_height="23dp"
+                android:src="@drawable/ic_ambient" android:tint="#F0F0F4"
+                android:contentDescription="Ambient icon" />
+            <TextView android:id="@+id/notif_ambient_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ambient" android:textSize="12sp" android:textColor="#F0F0F4"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+        <Space android:layout_width="7dp" android:layout_height="1dp" />
+        <LinearLayout android:id="@+id/notif_wind" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="72dp"
+            android:gravity="center" android:orientation="vertical"
+            android:background="@drawable/notif_action_bg" android:clickable="true"
+            android:contentDescription="Wind reduction">
+            <ImageView android:layout_width="23dp" android:layout_height="23dp"
+                android:src="@drawable/ic_wind" android:tint="#F0F0F4"
+                android:contentDescription="Wind reduction icon" />
+            <TextView android:id="@+id/notif_wind_label" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Wind" android:gravity="center"
+                android:textSize="12sp" android:maxLines="1" android:textColor="#F0F0F4"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
